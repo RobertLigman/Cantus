@@ -1,0 +1,80 @@
+.artists {
+    padding-top: 25px;
+    &__subtitle {
+        color: var(--secondary-color);
+    }
+    .toggle-arrow {
+        display: none;
+    }
+}
+
+.upcoming {
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__details {
+        padding: 20px;
+        font-family: "Oswald", sans-serif;
+        color: #333;
+    }
+}
+
+.details {
+    &__title {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+    &__location {
+        color: #000;
+        padding: 5px;
+        font-size: 0.9rem;
+        &:last-of-type {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+.card {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    /* height: 500px; */
+}
+
+img {
+    /* object-fit: fill; */
+    width: 100%;
+}
+
+.img-container {
+    // display: inline-block;
+    width: 80vw;
+    position: relative;
+    img {
+        width: 100%;
+    }
+    &__text {
+        font-size: 1.3rem;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.latest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

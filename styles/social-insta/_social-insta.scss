@@ -1,0 +1,10 @@
+.social-insta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: blue;
+    background-color: #fff;
+    .img-tile {
+        padding: 10px;
+    }
+}

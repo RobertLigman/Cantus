@@ -1,0 +1,30 @@
+.hero {
+    background-color: #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    img {
+        position: absolute;
+        max-width: 100%;
+        min-height: 100%;
+        object-fit: fill;
+    }
+    &__title {
+        z-index: 1;
+        font-family: "Oswald", sans-serif;
+        font-size: 3.5rem;
+        color: var(--secondary-color);
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-size: 2.5rem;
+        z-index: 1;
+        color: #000;
+    }
+    .button-main {
+        z-index: 1;
+    }
+}
