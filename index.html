@@ -154,39 +154,77 @@
             <section class="music">
                 <h3 class="music__title">Popular</h3>
                 <p class="music__subtitle">Songs</p>
-                <div class="placeholder">dsad</div>
+                <div class="placeholder">
+                    <audio controls class="mp3-player">
+              <source
+                src="/assets/mp3/Armin van Buuren  Garibay - I Need You (feat. Olaf Blackwood).mp3"
+                type="audio/mpeg"
+              />
+
+              Your browser does not support the audio element.
+            </audio>
+                </div>
                 <ul class="music__list">
-                    <li class="list__item"><a href="">01. My heart is dancing</a></li>
-                    <li class="list__item"><a href="">02. Good day</a></li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Armin van Buuren  Garibay - I Need You (feat. Olaf Blackwood).mp3">
+                01. I Need You
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Agnes - Release Me [Official Video].mp3">
+                02. Release Me
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Alan Walker - The Spectre.mp3">
+                03. The Spectre
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Alan Walker – All Falls Down (Lyrics) ft. Noah Cyrus Digital Farm Animals.mp3">
+                04. All Falls Down
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Ariana Grande - One Last Time (Lyric Video).mp3">
+                05. One Last Time
+              </button>
+                    </li>
+
+                    <li class="list__item">
+                        <button class="songs" aria-label="/assets/mp3/Avicii – Lonely Together (Lyrics) ft. Rita Ora.mp3">
+                06. Lonely Together
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Axwell Λ Ingrosso - More Than You Know.mp3">
+                07. More Than You Know
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Axwell Λ Ingrosso - Sun Is Shining.mp3">
+                08. Sun Is Shining
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Bebe Rexha - Meant to Be (feat. Florida Georgia Line) [Official Music Video].mp3">
+                09. Meant to Be
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/CANT STOP THE FEELING! (From DreamWorks Animations Trolls) (Official Video).mp3">
+                10. CANT STOP THE FEELING!
+              </button>
                     </li>
                     <li class="list__item">
-                        <a href=""></a>
+                        <button class="songs" aria-label="/assets/mp3/Camila Cabello - Crying In The Club (Lyrics).mp3">
+                11. Crying In The Club
+              </button>
+                    </li>
+                    <li class="list__item">
+                        <button class="songs" aria-label="/assets/mp3/Camila Cabello - Havana (Lyrics  Lyric Video) ft. Young Thug.mp3">
+                12. Havana
+              </button>
                     </li>
                 </ul>
             </section>
@@ -205,14 +243,14 @@
                 <p class="mobile-app__text">
                     never stop listening. take your playlists and likes wherever you go.
                 </p>
-                <img src="assets/badge-example-preferred.png" />
-                <img src="assets/en_badge_web_generic.png" />
+                <a href="https://play.google.com/store" target="_blank"><img src="assets/badge-example-preferred.png" /></a>
+                <a href="https://play.google.com/store" target="_blank"><img src="assets/en_badge_web_generic.png" /></a>
             </section>
-            <section class="subscribe">
+            <!-- <section class="subscribe">
                 <p class="subscribe__text">subscribe newsletter</p>
                 <div class="subscribe__submit">arrow</div>
                 <div class="subscribe__underscore-line"></div>
-            </section>
+            </section> -->
             <footer class="footer">
                 <ul class="list nav-list">
                     <li class="nav-list__item"><a href="">Home</a></li>
@@ -224,7 +262,7 @@
                 </ul>
                 <div class="footer__text">
                     copyright &copy; 2009-2016
-                    <span class="special-curved">cantus</span> &copy; their respective owners. Shipped from Saelm, Mass. USA.
+                    <span class="special-curved red">cantus</span> &copy; their respective owners. Shipped from Saelm, Mass. USA.
                 </div>
             </footer>
         </div>
@@ -235,6 +273,7 @@
         <button class="button-main small">learn more</button>
     </nav> -->
     <script src="main.js"></script>
+    <script src="audioplayer.js"></script>
     <script src="artists-slider.js"></script>
 </body>
 
