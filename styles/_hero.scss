@@ -28,3 +28,9 @@
         z-index: 1;
     }
 }
+
+@media (min-width: 768px) {
+    .hero {
+        overflow: hidden;
+    }
+}

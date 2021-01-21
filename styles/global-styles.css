@@ -335,6 +335,12 @@ img {
   z-index: 1;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    overflow: hidden;
+  }
+}
+
 .mobile-app {
   margin: 10px;
   padding: 20px;
@@ -350,6 +356,16 @@ img {
   width: 100px;
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .mobile-app {
+    background-image: url("/assets/Layer 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    margin: 0 auto;
+  }
 }
 
 .social-insta {
@@ -400,6 +416,7 @@ html {
 
 body {
   width: 100vw;
+  max-width: 100%;
   text-align: center;
   margin: 0;
   height: 100vh;
@@ -446,6 +463,7 @@ body {
 
 .wrapper {
   width: 100vw;
+  max-width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: var(--main-header) var(--hero) 1fr;

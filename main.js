@@ -44,3 +44,5 @@ const borussiaPlayers = players.filter(
 );
 const sumOfGoals = (player, current) => player + current.goals;
 const dortmundGoals = borussiaPlayers.reduce(sumOfGoals, 0);
+
+var actualInnerWidth = document.body.scrollWidth;

@@ -26,6 +26,7 @@ html {
 
 body {
     width: 100vw;
+    max-width: 100%;
     text-align: center;
     margin: 0;
     height: 100vh;
@@ -69,12 +70,21 @@ body {
 
 .wrapper {
     width: 100vw;
+    max-width: 100%;
     display: grid;
     grid-template-rows: var(--main-header) var(--hero) 1fr;
     justify-content: center;
     align-content: center;
 }
 
+// .all-sections {
+//     width: 100vw;
+//     text-align: center;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-content: center;
+// }
 ul {
     list-style: none;
 }

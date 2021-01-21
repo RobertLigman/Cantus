@@ -12,3 +12,14 @@
         margin: 0;
     }
 }
+
+@media (min-width: 768px) {
+    .mobile-app {
+        background-image: url("/assets/Layer 1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        margin: 0 auto;
+        // max-width: 90vw;
+    }
+}
