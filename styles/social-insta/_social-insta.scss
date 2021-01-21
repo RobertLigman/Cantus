@@ -8,3 +8,15 @@
         padding: 10px;
     }
 }
+
+@media (min-width: 481px) {
+    .social-insta {
+        .img-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .img-tile {
+                max-height: 150px;
+            }
+        }
+    }
+}

@@ -133,12 +133,6 @@ img {
           align-items: center;
 }
 
-@media (min-width: 768px) {
-  .card {
-    max-width: 90vw;
-  }
-}
-
 .founder {
   padding-top: 25px;
   display: -webkit-box;
@@ -399,6 +393,18 @@ img {
 
 .social-insta .img-tile {
   padding: 10px;
+}
+
+@media (min-width: 481px) {
+  .social-insta .img-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .social-insta .img-container .img-tile {
+    max-height: 150px;
+  }
 }
 
 .footer {

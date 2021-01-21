@@ -13,7 +13,12 @@ let currentSlide = 1;
 let initialX = null;
 let newEventLeft = new Event("swipeLeft");
 let newEventRight = new Event("swipeRight");
-let size = imgSlides[0].clientWidth;
+let size;
+const getSize = () => {
+  size = imgSlides[0].clientWidth;
+};
+getSize();
+window.onresize = getSize;
 
 imgContainer.style.transform = `translateX(${-size * currentSlide}px)`;
 imgContainer.addEventListener("transitionend", () => {
@@ -74,5 +79,5 @@ imgContainer.addEventListener("touchmove", touchMoveHandler);
 imgContainer.addEventListener("swipeLeft", nextPicture);
 imgContainer.addEventListener("swipeRight", prevPicture);
 
-nextBtn.addEventListener("click", nextPicture);
-prevBtn.addEventListener("click", prevPicture);
+// nextBtn.addEventListener("click", nextPicture);
+// prevBtn.addEventListener("click", prevPicture);
