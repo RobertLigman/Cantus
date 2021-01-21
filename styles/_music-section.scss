@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+.mp3-player {
+    outline: none;
+}
+
+.mp3-player ::-internal-media-controls-download-button {
+    display: none;
+}
+
 .songs {
     border: none;
     background-color: #fff;
