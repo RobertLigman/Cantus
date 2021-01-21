@@ -133,6 +133,12 @@ img {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .card {
+    max-width: 90vw;
+  }
+}
+
 .founder {
   padding-top: 25px;
   display: -webkit-box;
