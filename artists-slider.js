@@ -1,5 +1,5 @@
 const imgContainer = document.querySelector(".slider-container");
-const imgSlides = document.querySelectorAll(".card__img");
+let imgSlides;
 
 // const imgContainer = document.querySelector(".img");
 // const imgSlides = document.querySelectorAll(".img img");
@@ -15,10 +15,11 @@ let newEventLeft = new Event("swipeLeft");
 let newEventRight = new Event("swipeRight");
 let size;
 const getSize = () => {
+  imgSlides = document.querySelectorAll(".card__img");
   size = imgSlides[0].clientWidth;
 };
 getSize();
-window.onresize = getSize;
+window.onresize = getSize();
 
 imgContainer.style.transform = `translateX(${-size * currentSlide}px)`;
 imgContainer.addEventListener("transitionend", () => {

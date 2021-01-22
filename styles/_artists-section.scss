@@ -80,7 +80,50 @@ img {
 }
 
 @media (min-width: 768px) {
-    // .card {
-    //     max-width: 90vw;
-    // }
+    .artists {
+        .card {
+            max-width: 90vw;
+        }
+    }
+    .upcoming {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        // justify-content: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        &__title,
+        &__subtitle {
+            grid-column: 1/-1;
+        }
+        &__container {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &__details {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .img-container {
+            max-width: 80%;
+            &__text {
+                display: none;
+            }
+        }
+    }
+    .img-container:hover .img-container__text {
+        display: block;
+    }
+}
+
+@media (min-width: 1025px) {
+    .artists {
+        .card {
+            max-width: 50vw;
+        }
+    }
 }

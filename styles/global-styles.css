@@ -133,6 +133,67 @@ img {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .artists .card {
+    max-width: 90vw;
+  }
+  .upcoming {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    justify-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .upcoming__title, .upcoming__subtitle {
+    grid-column: 1/-1;
+  }
+  .upcoming__container {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .upcoming__details {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .upcoming .img-container {
+    max-width: 80%;
+  }
+  .upcoming .img-container__text {
+    display: none;
+  }
+  .img-container:hover .img-container__text {
+    display: block;
+  }
+}
+
+@media (min-width: 1025px) {
+  .artists .card {
+    max-width: 50vw;
+  }
+}
+
 .founder {
   padding-top: 25px;
   display: -webkit-box;
@@ -296,6 +357,36 @@ img {
 .active {
   display: -ms-grid;
   display: grid;
+}
+
+@media (min-width: 769px) {
+  .main-header {
+    -ms-grid-columns: 1fr 80px 1fr;
+        grid-template-columns: 1fr 80px 1fr;
+  }
+  .main-header .hamburger {
+    display: none;
+  }
+  .main-header .button-container {
+    grid-column: 3/-1;
+    display: -ms-grid;
+    display: grid;
+    justify-items: end;
+  }
+  .nav-list {
+    justify-self: start;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+  }
 }
 
 .hero {
