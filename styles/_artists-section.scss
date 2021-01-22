@@ -126,4 +126,46 @@ img {
             max-width: 50vw;
         }
     }
+    .upcoming {
+        width: 100%;
+    }
+    .preview-section {
+        display: grid;
+        grid-template-columns: 60% 20%;
+        gap: 50px;
+        // justify-content: center;
+    }
+    .latest {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        .img-container {
+            width: 100%;
+            max-width: 350px;
+            img {
+                max-height: 260px;
+            }
+        }
+    }
+    .upcoming {
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 30px 30px auto;
+        align-items: flex-start;
+        .upcoming__container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: left;
+            .img-container {
+                max-width: 350px;
+                img {
+                    max-height: 260px;
+                }
+            }
+        }
+    }
 }

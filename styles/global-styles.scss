@@ -113,3 +113,10 @@ h3[class*="__title"] {
     font-size: 2rem;
     font-family: "Great Vibes", cursive;
 }
+
+@media (min-width: 1025px) {
+    .all-sections {
+        max-width: 1200px;
+        margin: auto;
+    }
+}

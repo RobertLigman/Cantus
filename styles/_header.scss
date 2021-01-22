@@ -87,11 +87,13 @@
 
 @media (min-width: 769px) {
     .main-header {
+        width: 100%;
         grid-template-columns: 1fr 80px 1fr;
         .hamburger {
             display: none;
         }
         .button-container {
+            margin-right: 30px;
             grid-column: 3/-1;
             display: grid;
             justify-items: end;

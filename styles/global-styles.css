@@ -192,6 +192,67 @@ img {
   .artists .card {
     max-width: 50vw;
   }
+  .upcoming {
+    width: 100%;
+  }
+  .preview-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 20%;
+        grid-template-columns: 60% 20%;
+    gap: 50px;
+  }
+  .latest {
+    padding-top: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .latest .img-container {
+    width: 100%;
+    max-width: 350px;
+  }
+  .latest .img-container img {
+    max-height: 260px;
+  }
+  .upcoming {
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+    -ms-grid-rows: 30px 30px auto;
+        grid-template-rows: 30px 30px auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .upcoming .upcoming__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: left;
+  }
+  .upcoming .upcoming__container .img-container {
+    max-width: 350px;
+  }
+  .upcoming .upcoming__container .img-container img {
+    max-height: 260px;
+  }
 }
 
 .founder {
@@ -361,6 +422,7 @@ img {
 
 @media (min-width: 769px) {
   .main-header {
+    width: 100%;
     -ms-grid-columns: 1fr 80px 1fr;
         grid-template-columns: 1fr 80px 1fr;
   }
@@ -368,6 +430,7 @@ img {
     display: none;
   }
   .main-header .button-container {
+    margin-right: 30px;
     grid-column: 3/-1;
     display: -ms-grid;
     display: grid;
@@ -437,6 +500,7 @@ img {
 @media (min-width: 768px) {
   .hero {
     overflow: hidden;
+    min-width: 100vh;
   }
 }
 
@@ -464,6 +528,7 @@ img {
     background-size: cover;
     border: none;
     margin: 0 auto;
+    max-width: 90vw;
   }
 }
 
@@ -612,5 +677,12 @@ h3[class*="__title"] {
 .special-curved {
   font-size: 2rem;
   font-family: "Great Vibes", cursive;
+}
+
+@media (min-width: 1025px) {
+  .all-sections {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=global-styles.css.map */
