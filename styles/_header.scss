@@ -87,8 +87,15 @@
 
 @media (min-width: 769px) {
     .main-header {
-        width: 100%;
         grid-template-columns: 1fr 80px 1fr;
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-header {
+        // width: 100vw;
+        width: 100%;
         .hamburger {
             display: none;
         }
@@ -106,5 +113,8 @@
         position: static;
         align-items: center;
         width: auto;
+        &__item {
+            padding: 5px;
+        }
     }
 }

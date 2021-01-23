@@ -6,3 +6,11 @@
         color: var(--secondary-color);
     }
 }
+
+@media (min-width: 769px) {
+    .footer {
+        .nav-list__item:first-child {
+            text-decoration: none;
+        }
+    }
+}

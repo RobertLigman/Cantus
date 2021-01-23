@@ -75,6 +75,7 @@ body {
     grid-template-rows: var(--main-header) var(--hero) 1fr;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
 }
 
 // .all-sections {
@@ -112,6 +113,14 @@ h3[class*="__title"] {
 .special-curved {
     font-size: 2rem;
     font-family: "Great Vibes", cursive;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.black {
+    color: black;
 }
 
 @media (min-width: 1025px) {
