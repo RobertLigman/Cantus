@@ -124,14 +124,6 @@ h3[class*="__title"] {
 }
 
 @media (min-width: 769px) {
-    .grid-wrapper {
-        margin: 35px 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        .img-container {
-            width: 100%;
-        }
-    }
     .button-main {
         &--md {
             padding: 13px 20px;
@@ -150,6 +142,14 @@ h3[class*="__title"] {
 }
 
 @media (min-width: 1025px) {
+    .grid-wrapper {
+        margin: 35px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .img-container {
+            width: 100%;
+        }
+    }
     .all-sections {
         max-width: 1200px;
         margin: auto;
