@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__list {
+        padding: 0;
+    }
 }
 
 .mp3-player {
@@ -18,4 +21,15 @@
     padding: 5px;
     text-decoration: underline;
     outline: transparent;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .music__list {
+        margin: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

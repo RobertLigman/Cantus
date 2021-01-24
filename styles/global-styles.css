@@ -13,6 +13,10 @@
           align-items: center;
 }
 
+.music__list {
+  padding: 0;
+}
+
 .mp3-player {
   outline: none;
 }
@@ -27,6 +31,20 @@
   padding: 5px;
   text-decoration: underline;
   outline: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .music__list {
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .artists {
@@ -728,6 +746,16 @@ h3[class*="__title"] {
 }
 
 @media (min-width: 769px) {
+  .grid-wrapper {
+    margin: 35px 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .grid-wrapper .img-container {
+    width: 100%;
+  }
   .button-main--md {
     padding: 13px 20px;
   }
